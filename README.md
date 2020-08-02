@@ -1,3 +1,9 @@
+# Gatsby and Contentful
+
+Following [tutorial](https://codingthesmartway.com/gatsby-and-contentful-the-headless-cms-approach/) on using Gatsby with Contentful.
+
+---
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
