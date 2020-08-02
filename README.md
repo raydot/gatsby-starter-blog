@@ -2,6 +2,28 @@
 
 Following [tutorial](https://codingthesmartway.com/gatsby-and-contentful-the-headless-cms-approach/) on using Gatsby with Contentful.
 
+The [Contentful plugin](https://www.gatsbyjs.org/packages/gatsby-source-contentful/) has evolved since this video was made. `gatsby-source-contentful` and `gatsby-transformer-contentful-richtext` are combined into the `gatsby-source-contentful` package now.
+
+The Contentful GraphQL queries are made based on what the Contentful Blog fields are named. So to return the JSON from the blog fields in this tutorial, the correct GQL query is:
+
+```
+{
+  allContentfulPost {
+    edges {
+      node {
+        content{
+          json
+        }
+      }
+    }
+  }
+}
+```
+
+To return rich text as HTML, more work is required. The heavy lifter for this role is `@contentful/rich-text-react-renderer`.
+
+Sadly, this content is so out of date that it doesn't really resemble the way Contentful works any more. Quelle dommage, but it's a waste of time.
+
 ---
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
